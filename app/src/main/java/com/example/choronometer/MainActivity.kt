@@ -2,7 +2,9 @@ package com.example.choronometer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.SystemClock
 import android.view.LayoutInflater
+import android.view.View
 import com.example.choronometer.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +15,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         var stopTime :Long =0
+        binding.buttonStart.setOnClickListener{
+            binding.chronometer.base =SystemClock.elapsedRealtime() + stopTime
+            binding.chronometer.start()
+            binding.buttonStart.visibility = View.GONE
+            binding.buttonPause.visibility = View.VISIBLE
+            binding.imageView.setImageDrawable(getDrawable(R.drawable.pause))
+
+        }
 
     }
 }
