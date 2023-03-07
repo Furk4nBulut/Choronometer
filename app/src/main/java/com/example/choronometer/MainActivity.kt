@@ -23,6 +23,23 @@ class MainActivity : AppCompatActivity() {
             binding.imageView.setImageDrawable(getDrawable(R.drawable.pause))
 
         }
+        binding.buttonPause.setOnClickListener{
+            stopTime = binding.chronometer.base-SystemClock.elapsedRealtime()
+            binding.chronometer.stop()
+            binding.buttonPause.visibility = View.GONE
+            binding.buttonStart.visibility = View.VISIBLE
+            binding.imageView.setImageDrawable(getDrawable(R.drawable.start))
+
+        }
+        binding.buttonReset.setOnClickListener{
+            binding.chronometer.base =SystemClock.elapsedRealtime()
+            binding.chronometer.stop()
+            binding.buttonPause.visibility = View.GONE
+            binding.buttonStart.visibility = View.VISIBLE
+            binding.imageView.setImageDrawable(getDrawable(R.drawable.start))
+
+        }
+
 
     }
 }
