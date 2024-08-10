@@ -3,8 +3,14 @@
 This is a very basic stopwatch application coded in Java. The project is intended as a learning tool for understanding mobile programming. It showcases fundamental concepts of app development with a simple stopwatch functionality.
 
 ## Preview
-[Homepage](home.png)
-[Chronometer Start](meter.png)
+
+**Homepage:**
+
+![Homepage](home.png)
+
+**Chronometer Start:**
+
+![Chronometer Start](meter.png)
 
 ## Features
 
@@ -18,4 +24,5 @@ This is a very basic stopwatch application coded in Java. The project is intende
 - Android Studio or any Java IDE for running the application
 
 ## License
- MIT License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
