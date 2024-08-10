@@ -6,11 +6,11 @@ This is a very basic stopwatch application coded in Java. The project is intende
 
 **Homepage:**
 
-![Homepage](home.png)
+<img src="home.png" alt="Homepage" width="100"/>
 
 **Chronometer Start:**
 
-![Chronometer Start](meter.png)
+<img src="meter.png" alt="Chronometer Start" width="100"/>
 
 ## Features
 
